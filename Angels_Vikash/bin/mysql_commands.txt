@@ -1,0 +1,6 @@
+create table Project(
+project_ID int primary key not null,
+project_Name varchar(20) not null,
+project_Desc varchar(200),
+block_ID int);
+
