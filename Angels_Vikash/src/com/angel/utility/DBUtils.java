@@ -1,17 +1,32 @@
 package com.angel.utility;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBUtils {
-	
-	public static void main(String[] args) {
 		
-		try() {
-			
+	public static Connection provideConnection() {
+		
+		Connection conn = null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
+		String url = "jdbc:mysql://localhost:3306/projectsb101";
+		
+		try {
+			conn = DriverManager.getConnection(url,"root","Qwe@123#");
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return conn;
 	}
 
 }
