@@ -5,7 +5,7 @@ public class Employee {
 	private int Employee_ID;
 	private String Employee_Name;
 	private int Project_ID;
-	private int Salary;
+	private int Wage;
 	private int Days_Worked;
 	private int GP_ID;
 	
@@ -18,7 +18,7 @@ public class Employee {
 		Employee_ID = employee_ID;
 		Employee_Name = employee_Name;
 		Project_ID = project_ID;
-		Salary = salary;
+		Wage = salary;
 		Days_Worked = days_Worked;
 		GP_ID = gP_ID;
 	}
@@ -26,7 +26,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [Employee_ID=" + Employee_ID + ", Employee_Name=" + Employee_Name + ", Project_ID="
-				+ Project_ID + ", Salary=" + Salary + ", Days_Worked=" + Days_Worked + ", GP_ID=" + GP_ID + "]";
+				+ Project_ID + ", Salary=" + Wage + ", Days_Worked=" + Days_Worked + ", GP_ID=" + GP_ID + "]";
 	}
 
 	public int getEmployee_ID() {
@@ -54,11 +54,11 @@ public class Employee {
 	}
 
 	public int getSalary() {
-		return Salary;
+		return Wage;
 	}
 
 	public void setSalary(int salary) {
-		Salary = salary;
+		Wage = salary;
 	}
 
 	public int getDays_Worked() {

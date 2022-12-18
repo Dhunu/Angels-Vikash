@@ -4,7 +4,6 @@ public class Project {
 	
 	private int Project_ID;
 	private String Project_Name;
-	private String Project_Desc;
 	private int Block_ID;
 	
 	public Project() {
@@ -15,14 +14,12 @@ public class Project {
 		super();
 		Project_ID = project_ID;
 		Project_Name = project_Name;
-		Project_Desc = project_Desc;
 		Block_ID = block_ID;
 	}
 
 	@Override
 	public String toString() {
-		return "Project [Project_ID=" + Project_ID + ", Project_Name=" + Project_Name + ", Project_Desc=" + Project_Desc
-				+ ", Block_ID=" + Block_ID + "]";
+		return "Project [Project_ID=" + Project_ID + ", Project_Name=" + Project_Name + ", Project_Desc="+ ", Block_ID=" + Block_ID + "]";
 	}
 
 	public int getProject_ID() {
@@ -41,22 +38,9 @@ public class Project {
 		Project_Name = project_Name;
 	}
 
-	public String getProject_Desc() {
-		return Project_Desc;
-	}
-
-	public void setProject_Desc(String project_Desc) {
-		Project_Desc = project_Desc;
-	}
-
 	public int getBlock_ID() {
 		return Block_ID;
 	}
-
-	public void setBlock_ID(int block_ID) {
-		Block_ID = block_ID;
-	}
-	
 	
 
 }
