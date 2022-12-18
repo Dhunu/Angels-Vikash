@@ -1,6 +1,24 @@
 create table Project(
-project_ID int primary key not null,
+project_ID int primary key auto_increment,
 project_Name varchar(20) not null,
-project_Desc varchar(200),
 block_ID int);
 
+create table BDO(
+block_ID int primary key auto_increment,
+block_Name varchar(20) not null,
+BDO_Name varchar(20) not null);
+
+create table GPM(
+GP_ID int,
+GP_Name varchar(20) not null,
+GPM_Name varchar(20) not null,
+block_ID int,
+project_ID int);
+
+create table Employee(
+Employee_ID int primary key auto_increment,
+Employee_Name varchar(20) not null,
+Project_ID  int,
+Wage int,
+Days_Worked int,
+GP_ID int);
